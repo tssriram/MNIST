@@ -82,7 +82,7 @@ print(pred)
 # In[19]:
 
 # Regular format for submission
-a=pd.Series(range(0,28000))
+a=pd.Series(range(1,28001))
 predi={'ImageId':a,'Label':pred}
 final=pd.DataFrame(predi)
 
@@ -96,7 +96,7 @@ print(final)
 # In[22]:
 
 #Output into a file
-final.to_csv('finalmnistmlp.csv', index='False')
+final.to_csv('finalmnistmlp.csv', index=False)
 
 
 
