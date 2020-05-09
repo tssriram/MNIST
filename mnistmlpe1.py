@@ -31,6 +31,7 @@ train.iloc[:,1:785]=train.iloc[:,1:785]/255
 
 
 mlp = MLPClassifier(hidden_layer_sizes=(28,28,28,28),activation='relu',solver='sgd')
+# With this setup accuracy tested on Kaggle was 0.95514
 
 
 # In[6]:
