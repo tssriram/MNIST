@@ -31,7 +31,10 @@ train.iloc[:,1:785]=train.iloc[:,1:785]/255
 
 # Defining the classifier object
 
-mlp = MLPClassifier(hidden_layer_sizes=(49,49,49),activation='relu',solver='adam',max_iter=300)
+mlp = MLPClassifier(hidden_layer_sizes=(196,49,49),activation='relu',solver='adam',max_iter=400)
+# With this setup accuracy tested on Kaggle was 0.977
+
+#mlp = MLPClassifier(hidden_layer_sizes=(49,49,49),activation='relu',solver='adam',max_iter=300)
 # With this setup accuracy tested on Kaggle was 0.96814
 
 #mlp = MLPClassifier(hidden_layer_sizes=(28,28,28,28),activation='relu',solver='adam',max_iter=250)
