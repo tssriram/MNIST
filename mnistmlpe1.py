@@ -32,22 +32,22 @@ train.iloc[:,1:785]=train.iloc[:,1:785]/255
 # Defining the classifier object
 
 mlp = MLPClassifier(hidden_layer_sizes=(196,49,49),activation='relu',solver='adam',max_iter=400)
-# With this setup accuracy tested on Kaggle was 0.977
+# With this setup, accuracy tested on Kaggle was 0.977
 
 #mlp = MLPClassifier(hidden_layer_sizes=(49,49,49),activation='relu',solver='adam',max_iter=300)
-# With this setup accuracy tested on Kaggle was 0.96814
+# With this setup, accuracy tested on Kaggle was 0.96814
 
 #mlp = MLPClassifier(hidden_layer_sizes=(28,28,28,28),activation='relu',solver='adam',max_iter=250)
-# With this setup accuracy tested on Kaggle was 0.96042
+# With this setup, accuracy tested on Kaggle was 0.96042
 
 #mlp = MLPClassifier(hidden_layer_sizes=(28,28,28,28),activation='relu',solver='sgd')
-# With this setup accuracy tested on Kaggle was 0.95514
+# With this setup, accuracy tested on Kaggle was 0.95514
 
 #mlp = MLPClassifier(hidden_layer_sizes=(28,28,28,28),activation='relu',solver='sgd',max_iter=1000)
-# With this setup accuracy tested on Kaggle was 0.954
+# With this setup, accuracy tested on Kaggle was 0.954
 
 #mlp = MLPClassifier(hidden_layer_sizes=(28,28,28,28),activation='relu',solver='lbfgs',max_iter=400)
-# With this setup accuracy tested on Kaggle was 0.95214
+# With this setup, accuracy tested on Kaggle was 0.95214
 
 # In[6]:
 
